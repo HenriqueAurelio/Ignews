@@ -4,6 +4,7 @@ import { fauna } from '../../../services/fauna'
 import { query as q } from 'faunadb'
 import { signIn } from 'next-auth/react'
 export default NextAuth({
+  secret: process.env.NEXTAUTH_SECRET,
   // Configure one or more authentication providers
   providers: [
     GithubProvider({
