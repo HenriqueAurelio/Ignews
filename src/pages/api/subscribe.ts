@@ -35,8 +35,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     const stripeCheckoutsession = await stripe.checkout.sessions.create({
       customer: customerId,
       payment_method_types: ['card'],
-      billing_address_collection: 'required',
       line_items: [{ price: 'price_1K4B8gEtCstiIJS73Kv2gboL', quantity: 1 }],
+      billing_address_collection: 'required',
       mode: 'subscription',
       allow_promotion_codes: true,
       success_url: process.env.STRIPE_SUCCESS_URL,
