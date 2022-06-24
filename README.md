@@ -1,2 +1,2 @@
 # Ignews
-Desenvolvido durante curso de ReactJS da Rocketseat
+Developed during ReactJS course of Rocketseat using FaunaDB, ReactJS, Stripe, Prismic CMS, NextJS
